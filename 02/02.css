@@ -1,0 +1,41 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: lightblue;
+}
+
+h2 {
+    color: blue;
+}
+
+
+.c2 {
+    background-color: lightgrey;
+}
+
+#d1 > h2 {
+    color: green;
+}
+
+/* header > ul > li {
+    color:  green;
+} */
+
+
+header li {
+    color: red;
+}
+
+img[alt=html], img[alt=js] {
+    width: 100px;
+    height: 100px;
+}
+
+/* img[alt=js] {
+    width: 100px;
+    height: 100px;
+} */
+
