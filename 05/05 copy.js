@@ -19,8 +19,7 @@ for(let i = 0; i < arr.length ; i++) {
 //for ... in
 console.log('**for in 반복문**')
 for(let i in arr) {
-    console.
-    log(arr[i])
+    console.log(arr[i])
 }
 
 //for each
