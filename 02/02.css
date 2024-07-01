@@ -2,40 +2,102 @@
     margin: 0px;
     padding: 0px;
 }
-
-header {
+/* 전체 박스 색상 넣기 */
+body {
+    /* background-color: lightblue; */
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+#content {
     background-color: lightblue;
+    padding: 20px;
+}
+/* 제목 왼쪽 정렬로, 글씨 키우고, 굵게하기 */
+header div {
+    font-size: 30px;  
+    font-weight: bold;
+    padding: 10px;
+    /* border: 1px solid; */
+    margin: 30px 5px;
+}
+/* 목록 end로 정렬하고 영역 밖 간격 두기*/
+header > ul {
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    margin: 30px;
+    /* border: 1px solid; */
 }
 
-h2 {
-    color: blue;
+a {
+    text-decoration: none;
+    color:white;
+    background-color: dodgerblue;
+    display: inline-block;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 8%;
+}
+
+/* 목록 안 글자 흰색, 파란색 박스 만들기 */
+a:hover {
+    color: white;
+    background-color: tomato;
+}
+/* 프론트엔드 헤더 부분 박스로 만들고 간격 두기 */
+article {
+    margin: 20px;
+}
+
+article h1 {
+    height: 70px;
 }
 
 
-.c2 {
-    background-color: lightgrey;
+/* HTML CSS 등등 요소 흰 박스로 만들기 */
+section {
+    background-color: white;
+    padding: 10px;
+    margin: 25px 10px;
 }
-
-#d1 > h2 {
-    color: green;
+/* 이미지 원형으로 변경 */
+img {
+    border-radius: 50%;
+    margin: 20px;
+    /* border: 1px solid; */
 }
-
-/* header > ul > li {
-    color:  green;
+section > div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+/* section p {
+    border: 1px solid;
+    display: inline-flex; 
+    margin-left: 50px;
 } */
 
-
-header li {
-    color: red;
+/* bottom 박스 만들고 중앙 정렬 후 배경색과 글자색 입히기 */
+footer {
+    background-color: black;
+    color: white;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
-img[alt=html], img[alt=js] {
-    width: 100px;
-    height: 100px;
-}
+@media screen and (min-width: 1024px) {
+ 
+    #content {
+        width: 80%;
+    }
 
-/* img[alt=js] {
-    width: 100px;
-    height: 100px;
-} */
-
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+  }
