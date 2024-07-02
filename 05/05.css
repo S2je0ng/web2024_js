@@ -20,13 +20,17 @@ form {
     justify-content: start;
     align-items: center;
     width: 50%;
-   
 }
 
 select {
     width: 90%;
     height: 30px;
 }
+
+/* .d2{
+    background-color: cadetblue;
+} */
+
 
 input {
     width: 70%;
