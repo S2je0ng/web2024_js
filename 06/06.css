@@ -1,0 +1,17 @@
+/* #msg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#txt1 {
+    padding: 10px;
+}
+ */
+
+input[type=number]{
+    height: 30px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
