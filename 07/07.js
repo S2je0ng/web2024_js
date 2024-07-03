@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         
         console.log(txt1.value);            // 문자열 내용 가져오기
         console.log(txt1.value.length);     // 문자열 글자 수 확인
-        console.log(txt1.value[2]);         // 문자열 접근 (2번째 글자)
+        console.log(txt1.value[2]);         // 문자열 접근 (3번째 글자)
         console.log(txt1.value.charAt(0));  //문자열 첫 글자
         
         for(let c of txt1.value){           //문자열 모두 순회

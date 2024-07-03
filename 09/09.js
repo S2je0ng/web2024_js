@@ -11,12 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
         // arr = [];
         arr.length = 0;
 
-        console.log(lotto.innerHTML)
-        console.log(lotto.textContent)
         //로또 번호 생성
         while(arr.length < 7){
             const n = Math.floor(Math.random() * 45) + 1;
-            if ( !arr.includes(n)) arr.push(n); // 랜덤숫자 n이 배열안에 없으면 n을 배열에 추가 (push)
+            if ( !arr.includes(n)) arr.push(n); // 랜덤숫자 n이 배열안에 없으면 n을 배열에 추가
         }
 
         //로또 번호 정렬
@@ -40,13 +38,11 @@ document.addEventListener('DOMContentLoaded', () => {
         tm.splice(6,0, '<span id="spplus">+</span>') //배열에서 인덱스6 이 가르키는 값부터 아무값도 삭제하지 않고, '<span id="spplus">+</span>'을 추가
             // <span> 태그 인라인 컨테이너
 
-
         lotto.innerHTML = tm.join(''); //innerHTML 속성은 텍스트만 웹페이지에 적용함
         // lotto.textContent = tm.join(''); //textContent 속성은 텍스트 그대로 웹페이지에 적용 ex) <span> 요런 거 다 나옴
         
     });
 });
-
 // filter , map 언제 어떻게 쓸건지 생각하기
-
 // map은 배열을 하나하나 순회하면서 배열의 내용을 수정하는 것
+// filter는 배열의 요소를 순회하면서 콜백 함수를 사용하여 원하는 조건에 따라 필터링하는 함수
