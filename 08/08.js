@@ -26,13 +26,13 @@ document.addEventListener('DOMContentLoaded' , () => {
             console.log(bt.textContent)
 
             // if (bt.textContent== '사과'){
-            //     arr.push('🍎');
+            //     arr.push('🍎'); 윈도우 키 누르고 . 눌리면 이모지 나옴
             // }
             // else if (bt.textContent == '바나나') {
             //     arr.push('🍌');
             // }
             // else if (bt.textContent == '오렌지') {
-            //     arr.push('🍊');
+            //     arr.push('🍊'); 
             // }
             // else if (bt.textContent == '수박') {
             //     arr.push('🍉');
@@ -65,13 +65,13 @@ document.addEventListener('DOMContentLoaded' , () => {
     //변경버튼
     for (let bt of btChanges) {
         bt.addEventListener('click', ()=>{
-            const w1 = bt.textContent.split('→')[0];
+            const w1 = bt.textContent.split('→')[0]; // ㅁ 누르고 한자 누르면 화살표 나옴
             const w2 = bt.textContent.split('→')[1];
             console.log(w1, w2)
 
             // arr = arr.map((item) => {return item == obj[w1] ? obj[w2] : item}); // map활용해서 바꿔치기
             arr = arr.map(item => item == obj[w1] ? obj[w2] : item); //콜백함수에 return 함수 생략함
-            // item == obj 이면 obj[w2] 아니면 item
+            // item == obj 이면 obj[w2] 아니면 item 선택
             console.log(arr)
             txt1.value = arr.join(' ') //배열에 추가
         });
