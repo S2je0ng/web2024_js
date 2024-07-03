@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded' , () => {
     //랜덤수
     let n = 0;
 
-    const Init = () => {
+    const init = () => {
         img.setAttribute('src', './img/what.png')
         txt1.value = '';
         txt1.style.display = 'inline';
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded' , () => {
 
         //확인 버튼이 아닌 경우 초기화 
         if(btok.textContent !== '확인'){
-            Init();
+            init();
             return;
         }
         if (flag){
