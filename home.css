@@ -48,6 +48,11 @@ h2 {
 
     border-radius: 10px;
     text-decoration: none;
+    padding-left: 20px;
+}
+
+#list a:hover{
+    background-color: plum;
 }
 
 #cf{
